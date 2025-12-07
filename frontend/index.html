@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cognitive Security & Disinformation Analysis Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Cognitive Security & Disinformation Analysis Dashboard</h1>
+    <p class="subtitle">Synthetic educational environment only</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Analyze Synthetic Text</h2>
+      <textarea id="textInput" placeholder="Enter fictional content..."></textarea>
+      <button id="analyzeBtn">Analyze</button>
+      <pre id="analysisOutput"></pre>
+    </section>
+    <section class="panel">
+      <h2>Risk Overview</h2>
+      <canvas id="riskGauge"></canvas>
+      <ul id="recommendations"></ul>
+    </section>
+    <section class="panel">
+      <h2>Narrative Clusters</h2>
+      <canvas id="clusterChart"></canvas>
+    </section>
+  </main>
+  <footer>
+    <p>All analyses are synthetic and intended for cognitive security training.</p>
+  </footer>
+  <script src="dashboard.js"></script>
+</body>
+</html>
