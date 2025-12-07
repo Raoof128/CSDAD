@@ -21,6 +21,6 @@ jobs:
         run: pytest
       - name: Lint
         run: |
-          ruff .
+          ruff check .
           black . --check
           isort . --check-only

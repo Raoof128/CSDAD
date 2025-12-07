@@ -78,7 +78,7 @@ Makefile         # Common developer commands
 ## Development
 - Install dev tooling: `pip install -r requirements-dev.txt`
 - Format: `black`, `isort`
-- Lint: `ruff`
+- Lint: `ruff check .`
 - Tests: `pytest`
 
 ### Running Tests & Checks
@@ -88,7 +88,7 @@ make test
 ```
 
 ### Developer Toolbox
-- `make format` to auto-format (black, isort) and apply ruff fixes.
+- `make format` to auto-format (black, isort) and apply ruff check fixes.
 - `.editorconfig` to standardize editors/IDEs.
 - Docker image includes `en_core_web_sm` so spaCy loads out of the box.
 

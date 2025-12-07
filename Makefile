@@ -7,14 +7,14 @@ install-dev: install
 pip install -r requirements-dev.txt
 
 lint:
-ruff .
+ruff check .
 black . --check
 isort . --check-only
 
 format:
 black .
 isort .
-ruff . --fix
+ruff check . --fix
 
 test:
 pytest
